@@ -17,6 +17,7 @@ Escolha = int(input('Escolha: '))
 print('-' * 60)
 
 if Escolha == 1:
+    Combustivel = 'ALCOOL'
     if Litros <= 20:
         ValorLitros = (Litros * LitroAlcool)
         Desconto = ValorLitros * 0.03
@@ -30,6 +31,7 @@ if Escolha == 1:
         pass
 
 elif Escolha == 2:
+    Combustivel = 'GASOLINA'
     if Litros <= 20:
         ValorLitros = (Litros * LitroGasolina)
         Desconto = ValorLitros * 0.04
@@ -43,3 +45,9 @@ elif Escolha == 2:
 else:
     print('Informe um valor valido.')
 
+print(f'Quantia {Litros} litros De {Combustivel}')
+print(f'Preço Bruto....................R${ValorLitros}')
+print(f'Descontos......................R${Desconto}')
+print(f'Preço Total....................R${Total}')
+print('-' * 60)
+print('=' * 60)
