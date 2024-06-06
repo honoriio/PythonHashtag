@@ -25,3 +25,6 @@ vendas_produto = vendas_funcionario[indice_produto]
 
 print('-' * 60)
 print(f'O vendedor {nome_vendedor} Vendeu R${vendas_produto:,.2f} do produto {nome_produto}')
+
+
+# Preciso refatorar esse codigo para algo mais simples
