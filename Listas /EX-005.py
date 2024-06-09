@@ -34,7 +34,7 @@ if 'livro' in produtos:
 
     produtos_ecommerce.pop(IndiceProduto)   
     NovoPreco = [Quantia, ValorComJuros]
-    produtos_ecommerce[IndiceProduto] = produtos_ecommerce[IndiceProduto] = NovoPreco
+    produtos_ecommerce[IndiceProduto] = NovoPreco
 
     CustoAntigo = (Quantia * valor)
     NovoCusto = (Quantia * ValorComJuros)
@@ -50,7 +50,7 @@ if 'livro' in produtos:
     print('=' * 120)
     print(f'Com o novo imposto o novo custo sera de R${ValorComJuros:.2f}')
     print('-' * 120)
-    print(f'O custo antigo era de R${ValorComJuros:.2f}')
+    print(f'O custo antigo era de R${CustoAntigo:,.2f}')
     print('=' * 120)
     print('Sendo assim, o custo total sera de')
     print(f'R${NovoCusto:,.2f}')
