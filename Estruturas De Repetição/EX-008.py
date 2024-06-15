@@ -7,8 +7,13 @@ estoque = [
 ]
 fabricas = ['Lira Manufacturing', 'Fábrica Hashtag', 'Python Manufaturas', 'Produções e Cia', 'Manufatura e Cia']
 nivel_minimo = 50
+fabricas_estoque_baixo = []
 
 for i, lista in enumerate(estoque):
     for quantidade in lista:
         if quantidade < nivel_minimo:
-            print(fabricas[i], quantidade)
+           if fabricas[i] in fabricas_estoque_baixo:
+               pass
+           else:
+               fabricas_estoque_baixo.append(fabricas[i])
+print(fabricas_estoque_baixo)
