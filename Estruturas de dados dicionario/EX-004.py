@@ -4,3 +4,5 @@ for item in video:
     print(item)
 
 print(video['download'][0]['link'])
+
+print(video.values())
