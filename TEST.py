@@ -1,7 +1,12 @@
-senhas = [123456, 2593, 5575, 6535]
-senha = int(input('Informe a sua senha: '))
-
-if senha in senhas:
-    print('Login liberado')
-else:
-    print('A senha informada esta incorreta. ')
+lista = [1,2,3,4]
+iteravel = iter(lista)
+objeto_iteravel = iter(iteravel)
+# Loop infinito
+while True:
+    try:
+        # obtém o novo item
+        elemento = next(objeto_iteravel)
+        # faz algo com o elemento
+    except StopIteration:
+    # Se o StopIteration ocorrer, break no loop
+        break
